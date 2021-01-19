@@ -4,69 +4,65 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 80%;
     margin: auto;
-    background-color: blue;
+    background-color: white;
     margin-top: 10px;
 }
 
 header {
-    background-color: pink;
-    height: 50px;
+    background-color: #E579E6;
+    height: 80px;
 }
-
+/* parte centrale superiore */
 .banner {
-    background-color: yellow;
-    height: 300px;
+    background-color: #E3D67A;
+    height: 275px;
     margin: 10px 0;
     /* border: dashed 5px white; */
 }
-/* fine della parte centrale */
 
+/* parte centrale inferiore */
  .middle {
-    background-color: red;
+    background-color: #0385FF;
 }
 
 .middle::after {
     content: "";
-    height: 10px;
-    border: red solid 5px;
     display: block;
     clear: both;
 }
 
-
 .middle .box_titolo {
-    height: 100px;
-    background-color: purple;
+    height: 70px;
+    background-color: #ABCFE7;
 }
-.middle .box_left{
+.middle .box_left,
+.middle .box_right
+ {
     float: left;
-    background-color: white;
+    background-color: #ABCFE7;
     height: 500px;
     width: 23%;
     margin-top: 2%;
 }
 .middle .box_middle{
     float: left;
-    background-color: black;
+    background-color: #ABCFE7;
     height: 500px;
     width: 50%;
     margin: 2% 2%;
 }
-.middle .box_right{
-    float: left;
-    background-color: grey;
-    height: 500px;
-    width: 23%;
-    margin-top: 2%;
-}
-/* fine della parte inferiore */
+/* fine della parte centrale inferiore */
 
 footer{
-    height: 30px;
+    height: 40px;
     margin: 5px 0 10px 0;
-    background-color: white;
+    background-color: #8801FE;
 }
 /* fine del footer */
