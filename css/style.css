@@ -17,9 +17,56 @@ header {
 }
 
 .banner {
-    display: inline-block;
     background-color: yellow;
     height: 300px;
-    margin-top: 10px;
-    border: dashed 5px white;
+    margin: 10px 0;
+    /* border: dashed 5px white; */
 }
+/* fine della parte centrale */
+
+ .middle {
+    background-color: red;
+}
+
+.middle::after {
+    content: "";
+    height: 10px;
+    border: red solid 5px;
+    display: block;
+    clear: both;
+}
+
+
+.middle .box_titolo {
+    height: 100px;
+    background-color: purple;
+}
+.middle .box_left{
+    float: left;
+    background-color: white;
+    height: 500px;
+    width: 23%;
+    margin-top: 2%;
+}
+.middle .box_middle{
+    float: left;
+    background-color: black;
+    height: 500px;
+    width: 50%;
+    margin: 2% 2%;
+}
+.middle .box_right{
+    float: left;
+    background-color: grey;
+    height: 500px;
+    width: 23%;
+    margin-top: 2%;
+}
+/* fine della parte inferiore */
+
+footer{
+    height: 30px;
+    margin: 5px 0 10px 0;
+    background-color: white;
+}
+/* fine del footer */
